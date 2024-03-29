@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NYTimes Style Popup Ad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <title>VPN Style Popup Ad</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<div class="popup" id="popup">
-    <div class="popup-content">
-        <span class="close-btn" onclick="closePopup()">&times;</span>
-        <h2>Get Acess to Mozilla's VPN</h2>
-        <p> Click now and enjoy unlimited access!</p>
-        <button>Click Now</button>
-    </div>
-</div>
-
-<script src="main.js"></script>
+    <div class="popup">
+        <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+        <div class="popup-content">
+            <img src="mozilla_vpn_photo.jpg" alt="Mozilla VPN" class="product-image">
+            <div class="product-name">
+            <h1>Mozilla VPN</h1>
+        </div>
+        <div class="product-description">
+            <p>Protect your online privacy with Mozilla VPN</p>
+        </div>
+            <button>Subscribe Now</button>
+        </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
