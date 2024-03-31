@@ -30,6 +30,11 @@ body {
     margin-bottom: -5px; 
 }
 
+.product-image {
+    width: 100px; /* Adjust this value to shrink the image as desired */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .text-gradient {
     background-image: linear-gradient(to right, #6610f2, #f22e10);
     -webkit-background-clip: text;
