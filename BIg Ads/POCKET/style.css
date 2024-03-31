@@ -31,12 +31,18 @@ body {
 }
 
 .product-image {
+    /* width: 100px;  */
+    width: 400px;
+    /* height: auto;  */
+    height: 300px;
+}
+
+.product-imag {
     width: 100px; 
     height: auto; 
 }
-
 .text-gradient {
-    background-image: linear-gradient(to right, #6610f2, #f22e10);
+    background-image: linear-gradient(to right, #f2eee0, #f03c5c);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -123,7 +129,7 @@ body {
 }
 
 button {
-    background-image: linear-gradient(to right, #6610f2, #f22e10); /* Gradient background */
+    background-image: linear-gradient(to right, #f2eee0, #f03c5c);
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -137,5 +143,5 @@ button {
 }
 
 button:hover {
-    background: #f22d0a;
+    background: #f2eee0;
 }
