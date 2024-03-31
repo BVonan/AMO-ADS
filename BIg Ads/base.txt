@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <title>VPN Style Popup Ad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ad">
+        <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+        <div class="popup-content">
+            <div class="image-container">
+                <img src="images/vpnPhone2.png" alt="Mozilla VPN" class="product-image">
+            </div>
+            <div class="text-container">
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>Mozilla VPN <img src="images/vpn.png" alt="Mozilla VPN" class="product-image"></h1>
+                        <h2 class="text-gradient">Powerful privacy for peace of mind</h2>
+                    </div>
+                    <div class="product-description">
+                        <h3>Protect your online privacy with Mozilla's amazing VPN. Stay safe and secure while browsing the web.</h3>
+                    </div>
+                    <div class="product-features">
+                        <h3>Key Features:</h3>
+                        <div class="feature-columns">
+                            <div class="feature-column">
+                                
+                                    <li>Secure and private browsing</li>
+                                    <li>Access to geo-restricted content</li>
+                                    <li>Connect up to 5 devices</li>
+                                    <li>More than 500 servers in 30+ countries</li>
+                                    <li> Fast network speeds even while gaming</li>
+                                
+                            </div>
+                            <div class="feature-column">
+                                
+                                    <li>Fast and reliable connections</li>
+                                    <li>Cross-platform support</li>
+                                    <li>No logging, tracking or sharing of network data</li>
+                                    <li>No bandwidth restrictions or throttling</li>
+                                    <li>Extra security: whole device protection, multi-hop routing & more</li>
+                                
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <a href="https://www.mozilla.org/en-US/products/vpn/">
+                                <button nid="button">Get Mozilla VPN</button>
+                            </a>
+                        </div>
+                    </div>
+ 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7d4;
+    text-align: center;
+}
+
+.ad {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 1000px;
+}
+
+.product-name h1 {
+    font-size: 50px;
+    margin-bottom: -20px; 
+}
+
+.product-name h2 {
+    font-size: 34px;
+    margin-bottom: -5px; 
+}
+
+.text-gradient {
+    background-image: linear-gradient(to right, #007bff, #6610f2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #999;
+}
+
+.button-container{
+    align: center;
+}
+
+.popup-content {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    flex: 0 0 auto;
+}
+
+.product-image {
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.product-info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description {
+    margin-bottom: -15px;
+}
+
+.product-features {
+    margin-bottom: 15px;
+}
+
+.feature-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-column {
+    flex: 0 0 48%; 
+}
+
+.product-features h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+.product-features ul {
+    list-style-type: none;
+    padding: 0;
+    columns: 2;
+}
+
+.product-features li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+    column-span: all;
+}
+
+.button-container {
+    align-self: flex-end;
+    margin-top: 20px; 
+    text-align: center;
+}
+
+button {
+    background-image: linear-gradient(to right, #007bff, #6610f2); /* Gradient background */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    font-size: 18px;
+    text-align: center;
+    margin-right: 200px;
+}
+
+button:hover {
+    background: #007bff;
+}
