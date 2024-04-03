@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <title>Firefox Style Popup Ad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ad">
+        <span class="close-btn" onclick="this.parentElement.style.display='none'">&times;</span>
+        <div class="popup-content">
+            <div class="image-container">
+                <img src="images/Fx.svg" alt="Mozilla Focus" class="product-image">
+            </div>
+            <div class="text-container">
+                <div class="product-info">
+                    <div class="product-name">
+                        <h1>Firefox</h1>
+                        <h2 class="text-gradient">Simple Browsing</h2>
+                    </div>
+                    <div class="product-description">
+                        <h3>Firefox is your dedicated browser with automatic tracking protection.</h3>
+                    </div>
+                    <div class="product-features">
+                        <h3>In order to use these ads <div class="button-container">
+                            <a href="https://www.mozilla.org/firefox/download/thanks/?s=direct&utm_campaign=amo-fx-cta&utm_content=banner-download-button&utm_medium=referral&utm_source=addons.mozilla.org">
+                                <button id="button">Download Firefox</button>
+                            </a>
+                        </div></h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
